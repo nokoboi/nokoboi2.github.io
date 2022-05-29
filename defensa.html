@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mecanismos de Defensa</title>
+	<link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+        <img src="img/logo.png" alt="">
+        <nav>
+            <a href="index.html">Hackers</a>
+            <a href="ataques.html">Ataques a redes</a>
+            <a href="defensa.html">Defensa de redes</a>
+        </nav>
+    </header>
+	<main>
+		<h1>Mecanismos de Defensa</h1>
+		<section>
+			<article>
+				<p>Cuando hablamos de los distintos mecanismos de defensa que existen debemos, además, conocer los distintos tipos de seguridad informática que existe.
+				Los tres tipos de seguridad informática más importantes son la seguridad de red, la seguridad software y la seguridad hardware.
+
+				A continuación los conoceremos más en profundida, pero antes, es importante conocer la respuesta a esta sencilla, aunque compleja, pregunta, ¿qué es la seguridad informática?
+				Una buena respuesta sería definir la seguridad informática como el área de la informática que se encarga de todo lo está relacionado con la infraestructura computacional.</p>
+				<div class="foto">
+					<img src="img/seguridad.jpg">
+				</div>
+				
+			</article>
+		<br>
+		<article>
+			<h2>Tipos de Seguridad Informática</h2>
+			<h3>La seguridad informática de red</h3>
+				<p>La seguridad informática de red es la encargada de proteger esa información de accesos no autorizados, o en otras palabras, este tipo de seguridad prohíbe y evita el acceso de las personas sin autorización a estos datos con el fin de proteger la información.
+				Las amenazas, también conocidas como ciberataques, más comunes son los virus, el phishing, los troyanos, el robo de datos, el software espía, la suplantación de identidad, etc.
+				Para defendernos de estos ciberataques vamos a usar mecanismos de defensa; para estos casos los mecanismos que usa la seguridad de red son los cortafuegos, las redes privadas, los antivirus y antispyware y los sistemas de prevención de intrusiones.</p>
+			<br>
+			<h3>La seguridad informática de software</h3>
+				<p>Este tipo de seguridad trata de proteger a las aplicaciones y al software de amenazas externas. Estas amenazas pueden ser virus, ataques maliciosos, etc.
+				El mecanismo de seguridad que más se usa son los programas antivirus, ya que son capaces de actualizarse automáticamente y además, encontrar virus nuevos.
+				La búsqueda de los virus se hace periódicamente y además, también se usan los cortafuegos, los filtros antispam y el software para filtrar contenidos y publicidad que no queramos.</p>
+			<br>
+			<h3>La seguridad informática del hardware</h3>
+				<p>La seguridad informática del hardware se encarga de proteger los dispositivos ante intromisiones. El mecanismo de seguridad más usado para enfrentarse a estas amenazas son los cortafuegos de hardware y los servidores proxy. 
+				Además se usan módulos de seguridad de hardware que usan claves criptográficas para cifrar, descifrar y autentificar sistemas.</p>
+				<br>
+				<p>Ahora que ya sabemos un poco más sobre los distintos tipos de protección de nuestros sistemas vamos a conocer sobre algunos de los mecanismos de defensa más usados:</p>
+		</article>
+		<br>
+		<article>
+			<h2>Tipos de Mecanismos de Defensa</h2>
+			<h3>Cortafuegos</h3>
+				<p>Es un componente de una red informática utilizada para evitar que los usuarios que no tengan acceso a las redes privadas no puedan acceder a ellas.
+				Se pueden implementar en el hardware, en el software o en ambos y verifican las conexiones que se forman entre una red y un equipo local, además de regular la comunicación entre ambos para proteger el dispositivo.
+				El cortafuegos examina todos los mensajes que entren o salgan de la intranet y los bloquea si no cumplen los criterios de seguridad.
+				También se puede conectar el cortafuegos a una tercera red, conocida como desmilitarizada, donde se encuentran los servidores de la organización.
+				Los cortafuegos se clasifican por generaciones:</p>
+			<h4>Clasificación de los Cortafuegos</h4>
+			<h5>Primera Generación</h5>
+				<p>Son los filtrados de paquetes, considerando dichos paquetes como la unidad básica de transferencia de datos entre ordenadores.
+				Esta generación de cortafuegos inspecciona esos paquetes y comprueba las reglas de filtrado, rechazando el paquete si este coincide con el filtro. 
+				Este filtrado se centra en la información que contiene y utiliza el emisor del paquete y la dirección de destino, su protocolo, y, en el tráfico TCP y UDP, el número de puerto.
+				Estos protocolos (TCP y UDP) cuentan con la casi toda la comunicación a través de Internet y usan puertos para distintos tipos de tráfico.
+				Este filtrado de paquetes se realiza entre la red y las capas físicas y actúan en las tres primeras capas del modelo de referencia OSI.</p>
+			<h5>Segunda Generación</h5>
+				<p>Son los cortafuegos de estado donde también tienen en cuenta la colocación individual del paquete dentro de un subconjunto de paquetes y especifica si un paquete es el comienzo de una nueva conexión. 
+				Esto es conocido como la inspección de estado de paquetes y tiene los registros de todas las conexiones que pasan por el cortafuegos. 
+				Estos cortafuegos ayudan a prevenir los ataques contra conexiones en curso o denegación de servicio.</p>
+			<h5>Tercera Generación</h5>
+				<p>Son los cortafuegos de aplicación. Estos cortafuegos actúan sobre la capa de aplicación del Modelo OSI y es capaz de entender aplicaciones y protocolos y descubrir si algún protocolo sin acceso está abusando de otro protocolo o se ha colado mediante un puerto no estándar.
+				Estos cortafuegos se diferencian de un cortafuegos de aplicación solo porque también son capaces de filtrar el contenido del paquete.
+				Los protocolos que puede filtrar un cortafuegos de aplicación son: FTP, TELNET, DNS, DHCP, HTTP, TCP, UDP y TFTP (GSS).</p>
+			<h4>Tipos de Cortafuegos</h4>
+			<h5>Cortafuegos de capa de red o de filtrado de paquetes</h5>
+				<p>Se usa a nivel de red como un filtro de paquetes IP donde se pueden realizar filtros según las direcciones y campos de los paquetes, el nivel de transporte, el puerto de origen y destino, los enlaces de datos, la dirección IP origen y destino, etc.</p>
+			<h5>Pasarelas de nivel de aplicación</h5>
+				<p>Usa mecanismos de seguridad para el uso en aplicaciones más específicas. Algunos ejemplos podrán ser Telnet o servidores FTP y la ventaja que nos ofrece es que es muy eficaz pero decae en su rendimiento.</p>
+			<h5>Pasarelas de nivel de circuito</h5>
+				<p>Usa mecanismos de seguridad al establecerse una conexión TCP o UDP. Los paquetes circulan y hacen que se cree una nueva sesión desde una zona con una mayor seguridad a una con una seguridad menor.</p>
+			<h5>Cortafuegos Personal</h5>
+				<p>Este cortafuegos es, como su nombre bien indica, de uso personal, y se instala como un software en el ordenador. Filtra las comunicaciones entre el ordenador y el resto de la red.</p>
+			<h4>Desventajas</h4>
+			<ul>
+				<li>No pueden proteger los ataques cuyo tráfico no pase a través de él.</li>
+				<li>No pueden proteger de las amenazas de ataques internos o usuarios negligentes.</li>
+				<li>No pueden prohibir la copia de datos en medios físicos de almacenamiento.</li>
+				<li>No pueden proteger contra los ataques de ingeniería social.</li>
+				<li>No pueden proteger contra los ataques interna por virus informáticos a través de archivos y software.</li>
+				<li>No pueden proteger de los fallos de seguridad de los servicios y protocolos que tengan el tráfico permitido.</li>
+			</ul>
+			<p>Dato curioso: las empresas dedicadas a los servicios de tecnologías de la información (como Viewnext) están creando SOCs (centros de operación de seguridad).
+			Estos centros cuentan con la última tecnología en sistemas de prevención y detección de intrusos,para poder proteger a las empresas sobre sus infraestructuras.</p>
+			<br>
+			<h3>VPN</h3>
+			<p>Un VPN es una red privada virtual que se encargada de redirigir tus viajes por internet por una zona segura, teniendo como finalidad proteger tus datos de ciberataques ocultando tu dirección IP y encriptando tus datos.
+			Pueden ser usadas por cualquier persona y se pueden usar en todos los tipos de dispositivos (móviles, tablets, ordenadores, etc).
+			Además, un dato curioso es que gracias al VPN puedes te puedes conectar a internet en otros países y ver películas y series sin importar donde estés.
+			Ofrecen una capa de protección que ninguna otra herramienta de seguridad proporciona y te permite navegar de forma privada por internet, lo que dificulta que puedan rastrear la actividad.
+			Evita que descargues malware, bloquea los rastreadores y los anuncios maliciosos, controla que no accedas a un sitio web equivocado, analiza las filtraciones de datos públicos y se te notificará en el caso de que tus credenciales de inicio de sesión se filtren.
+			Un ejemplo de VPN sería ExpressVPN, considerada la mejor VPN que existe. Se caracteriza por su extremada velocidad, rápida, segura y privada, funciona con plataformas populares, tienen extensiones para Chrome y Firefox, no registra tus datos web, tienes 30 días de prueba gratis, descargas rápidas, privadas y seguras y más de 3000 servidores en 94 países.</p>
+			<h4>Opciones de VPN</h4>
+			<h5>NordVPN</h5>
+			<p>Considerada una de las mejores VPN del mundo en cuanto velocidad. Tiene más de 5400 servidores VPN en 60 países distintos.</p>
+			<h5>CyberGhost</h5>
+			<p>Con buenas velocidades, un sistema de IP basado en tokens, servicio cliente 24/7, 45 días de prueba gratis, protección wifi automática, extensiones Chrome y Firefox, servidores en 91 países y sin registros de tus datos web.</p>
+			<h5>Private Internet ACCESS</h5>
+			<p>Una alta velocidad, red de servidores más grande en 84 países, sin registros de actividad, con 30 días de prueba gratis, funciones avanzadas y extensiones Chrome y Firefox.</p>
+			<h5>IPVANISH</h5>
+			<p>Es VPN rápida y segura y dispone de funciones avanzadas. Cuenta con un servicio cliente de Chat en vivo para usuarios de Android, conexiones simultáneas ilimitadas, servidores en 50 países, sin registros de tus datos web, miles de direcciones IP disponibles y 30 días de prueba gratis.</p>
+			<h5>Surfshark</h5>
+			<p>Se caracteriza por tener un diseño muy bueno para principiantes, funciones de seguridad y privacidad con servicio cliente 24/7, servidores en 65 países, protección GPS en Android, 30 días de prueba gratis, no registra tus datos web y extensiones para Chorme y Firefox.</p>
+			<h5>Purevpn</h5>
+			<p>Cuenta con buenas velocidades y altos niveles de seguridad, servicios globales de calidad, servicio cliente 24/7, una red de servidores para Cromo y Firefox y dispone de servidores en 78 países.</p>
+			<h4>Desventajas de los VPN</h4>
+			<ul>
+				<li>Conexión a Internet más lenta.</li>
+				<li>Uso ilegal de las VPN.</li>
+				<li>No saber cómo de fuerte es el cifrado que proporciona la VPN.</li>
+				<li>Pérdidas de conexión.</li>
+				<li>Bloqueos específicos a los servicios VPN.</li>
+				<li>VPN gratuitas.</li>
+			</ul>
+			<br>
+			<h3>DLP</h3>
+			<p>Su función es prevenir las fugas de información sin perder la productividad.
+			Incorporan inteligencias artificiales que les da la capacidad de aprender sobre los tipos de documentos confidenciales y qué hacen con ellos los usuarios para mejorar su eficiencia a la hora de prevenir fugas de información.
+			Además, también tienen otras capacidades como: </p>
+			<ul>
+				<li>Comprobar los correos corporativos a los que se ha accedido.</li>
+				<li>Inspecciona los múltiples tipos de ficheros y los protocolos.</li>
+				<li>Comprueba y detiene la transmisión de datos.</li>
+				<li>Uso de la DLP que mejor se adapte a las necesidades.</li>
+				<li>Centralización de la administración.</li>
+				<li>Añaden marcas de agua a los ficheros.</li>
+				<li>Prevención y protección de la pérdida de Datos.</li>
+				<li>Prevención de extrusión.</li>
+				<li>Gestión más sencilla y ágil.</li>
+				<li>Supervisión y filtrado de todos los contenidos.</li>
+				<li>Seguimiento de los contenido y de las protecciones realizadas.</li>
+			</ul>
+			<p>Cuando implantamos un DLP se incorporan plantillas preconfiguradas teniendo en cuenta las distintas normas o estándares (RGPD, LPI, LSSI o PCI-DSS).
+			Los DLP tiene como objetivo proteger los datos, lo que implica:</p>
+			<ul>
+				<li>Garantiza la protección de toda la información sin tener en cuenta los datos que sean.</li>
+				<li>Cuenta con Green Computing.</li>
+				<li>Instala controles que evitan, mitigan o transfieren el riesgo.</li>
+				<li>Cuenta con una evolución en la Gobernabilidad, Riesgo y Cumplimiento de TI.</li>
+				<li>Tiene una administración del punto final y además, flujos de trabajo.</li>
+			</ul>
+			<h4>Tipos de DLP</h4>
+			<h5>Symantec Data Loss Prevention</h5>
+			<p>Es una DLP completa que previene fugas de información
+			confidencial. Detecta la información que debe ser protegida y evita su fuga mediante: </p>
+			<ul>
+				<li>E-mail.</li>
+				<li>Publicaciones en los recursos compartidos.</li>
+				<li>Extracción de dispositivos removibles.</li>
+				<li>Navegación.</li>
+				<li>Medios magnéticos.</li>
+			</ul>
+			<h5>Symantec DLP Enforcer</h5>
+			<p>Aquí corren la consola de administración y la base de datos Oracle y se encarga de controlar el Endpoint Prevent y el Endpoint Discover.</p>
+			<h5>E-Mail Prevent</h5>
+			<p>Recibe todos los correos electrónicos y los revisa contrastándolo con las políticas de DLP.</p>
+			<h5>Web Prevent</h5>
+			<p>Recibe el tráfico de la navegación competo y lo revisa contra las políticas de DLP.</p>
+			<br>
+			<h3>Software Antispam</h3>
+			<p>Son filtros que detectan los correos que contienen spam y trata de hacer frente al spamming.
+			El spamming es el hecho de enviar mensajes no solicitados mediante mensajería electrónica. Estos correos consumen el ancho de banda de su correo electrónico y además puede afectar negativamente su productividad. 
+
+			El software antispam bloqueará los correos electrónicos spam basándose en distintos puntos: </p>
+			<ul>
+				<li>Dirección de correo electrónico del remitente</li>
+				<li>El asunto</li>
+				<li>El mensaje</li>
+				<li>El tipo de archivos adjuntos</li>
+			</ul>
+			<h4>Mejores opciones de Software Antispam</h4>
+			<h5>GFI Mail Essentials</h5>
+			<p>Proporciona seguridad antispam alta y mantiene la red segura bloqueando cualquier tipo de spam.
+			Ofrece:</p>
+			<ul>
+				<li>Una cantidad de 5 motores antivirus.</li>
+				<li>Protección contra todo tipo de spam y malware.</li>
+				<li>Instalación en distintos servidores.</li>
+				<li>Filtrados completos de spam empresarial.</li>
+				<li>Sincronización de la configuración de la red.</li>
+				<li>Protección avanzada para enfrentar el malware.</li>
+				<li>Bloqueo de los correos electrónicos que sean spyware y phishing.</li>
+			</ul>
+			<h5>EuropeanMX</h5>
+			<p>Su función es proteger la red de las empresas. Tiene muy buena reputación por bloquear hasta el 99,98% de los correos de spam antes de que consigan tener acceso a la red. 
+			Además, también protege la reputación de las empresas y sus clientes, ofrece almacenamiento en nube, protege los buzones de correo contra spam, virus, phishing y otros ataques de malware y ofrece un servicio de copia de seguridad de los correos para no perder ninguna información.</p>
+			<h5>Exclamador Anti Spam</h5>
+			<p>Hace uso del motor CYREN y compara cada correo electrónico que le llega con los correos de spam enviados en todo el mundo.
+			Cuenta con una protección en tiempo real, un soporte gratuito de Exlaimer, una configuración sencilla, no tiene hardware adicional y una administración antispam simple.</p>
+			<h5>GravityZone Security – Bitdefender</h5>
+			<p>Este software proporciona un antispam y anti-malware de alta calidad y garantiza un entorno seguro de mensajería con un bajo consumo de recursos.
+			Contiene antispam, antiphishing, antivirus y anti-malware, puede filtrar el tráfico, incluidos los archivos adjuntos y cuenta con un filtro heurístico antispam de gama alta llamado APM, tiene una opción llamada Análisis de datos en tiempo real que detecta mensajes de spam incluso antes de abrir el correo electrónico y cuenta con la integración de Active Directory, VMware vCenter y Citrix XenServer.</p>
+			<h5>MX GuardDog</h5>
+			<p>Se encarga de detener el spam en la nube antes de que llegue a su Exchange Server. 
+			Además, escanea su correo electrónico en busca de spam, malware, ataques de phishing y virus.
+			Características: </p>
+			<ul>
+				<li>Informes de cuarentena 100% transparentes</li>
+				<li>Redundancia geográfica</li>
+				<li>Informes de cuarentena SLA</li>
+				<li>Encriptación fuerte (Transport Layer Security y Perfect Forward Security)</li>
+				<li>Configuración rápida</li>
+				<li>Sincronización LDAP, AD, y cPanel</li>
+				<li>Protección contra caídas</li>
+				<li>168 horas de spooling </li>
+			</ul>
+			<h3>Filtros anti-phishing</h3>
+			<p>Se trata de un programa de software que intenta bloquear las actividades de phishing. El Phishing es la suplantación de identidad de otra persona haciéndolo con la intención de robar información, obtener dinero o poder, o robar la identidad y se puede realizar mediante correos electrónicos, sitios web o llamadas telefónicas.
+			Los filtros de anti-phishing se encargan de comprobar si los sitios donde accede el usuario tienen una lista de sitios de phishing y malware que han sido descubiertos para ver si corre algún riesgo y debe avisar al usuario.</p>
+			<h3>Software Antispyware</h3>
+			<p>Protege a los usuarios contra los programas que rastrean la información de consumo y navegación para obtener contraseñas y otros datos.
+			Para identificar que un ordenador tiene SPYWARE podemos observar que nuestro ordenador tiene los siguientes comportamientos:</p>
+			<ul>	
+				<li>Se abren ventanas navegas por Internet.</li>
+				<li>Aparecen barras de herramientas sin que tú lo indiques.</li>
+				<li>Se te cambia la página de inicio.</li>
+				<li>Te dirige a sitios web que no indicaste.</li>
+			</ul>
+			<h4>Mejores opciones de anti-phishing</h4>
+			<h5>Norton 360</h5>
+			<p>Usa el aprendizaje automático para detectar el 100 % de las amenazas y tiene muchas funciones para proteger tus datos como Cortafuegos inteligente, análisis de brokers de información, gestor de contraseñas, protección de la cámara web, una VPN segura y monitorización de la dark web.
+			Además, cuenta con la función de proteger la cámara web, que evita que los hackers te espíen directamente.
+			Tiene un coste desde 14,99 € / año a 34,99 € / año.</p>
+			<h5>McAfee Total Protection</h5>
+			<p>Ofrece la detección y eliminación de spyware y un conjunto de herramientas de seguridad en Internet (Análisis de redes Wi-Fi, protección antiphishing, VPN ymonitorización de la dark web).
+			Tiene un coste de 19.95€ / año y ofrece una garantía de reembolso de 30 días.</p>
+			<h5>Bitdefender Total Security</h5>
+			<p>Es una ventana de navegador aislada y de solo lectura que se usa solo para las transacciones en línea que hace que el spyware no puede controlar tu tráfico, ni recopilar información, ni acceder a la barra de herramientas ni motores de búsqueda. 
+			Su coste es de 32€ / año y cuenta con una garantía de reembolso de 30 días.</p>
+			<h5>Avira Free Antivirus</h5>
+			<p>Ofrece la que se considera la mejor protección gratuita contra el spyware, además de incluir alguna protección que garantiza tu privacidad en Internet limitada a 200 MB/día.
+			Cuenta con VPN con datos ilimitados, herramientas de optimización del sistema, un gestor de contraseñas y monitorización de la dark web.
+			Su precio es de 59,95 € / año, protege a más de un dispositivo y tiene buenas aplicaciones para móvil. Además, te da una garantía de reembolso de 60 días.
+			Si no hemos conseguido evitar el ataque, haremos uso de las defensas pasivas, cuya función es minimizar las consecuencias de un ataque:</p>
+			<ul>
+				<li>Hardware adecuado.</li>
+				<li>Partición del disco duro.</li>
+				<li>Copias de seguridad de datos.</li>
+			</ul>
+		</article>
+		<article>
+			<h2>Redes Defensivas</h2>
+			<p>Otra forma de evitar los ataques de los hackers es el uso de distintos tipos de Redes Defensivas, entra ellas:</p>
+			<h3>Chunks</h3>
+			<p>Esta red tiene todos sus nodos entrelazados y conectados entre ellos. Esto hace que sea más complicado atravesar la red y encontrar un punto débil. Además, cuenta con un antivirus llamado Centinela que se extiende sobre todos los nodos que componen la red.
+			Aún así, como todo en esta vida, este tipo de red tiene una debilidad, los ataques de Sigilo, que consiste en no generar el ataque desde fuera de la red, sino desde dentro. También es débil contra los ataques Shuriken y Aturdidores.</p>
+			<h3>Ciempiés/Serpiente</h3>
+			<p>Esta red se divide en dos, por un lado, cuenta con las conexiones de red y por el otro cuenta con el Núcleo y con los Recursos. En medio de ellos disponen de Nodos de Seguridad y hacen más lentos los posibles ataques. 
+			Sus debilidades son los ataques basados en Kraken y los ataques con Shuriken.</p>
+			<h3>Trenzado</h3>
+			<p>Se podría decir que esta red es una versión mejorada de la red Ciempiés. Se compone por Nodos de Seguridad circundantes que se cruzan entre sí para tener muchas rutas de defensa. Cuenta con un antivirus llamado Sentry capaz de dispersarse más rápido que con el modelo Serpiente.
+			Sus inconvenientes son la dificultad que da al implementar una Puerta de Códigos y un cuello de botella.</p>
+			<h3>Árbol</h3>
+			<p>Esta red tiene varias ramas, y cada una de ellas tiene ramas más pequeñas. La rama principal, denominada como rama “raíz”, tiene todas las Conexiones de Red mientras que el Núcleo y los Nodos de Negocio están en las ramas que sales de la principal.
+			Da la posibilidad de implementar varios cuellos de botella y es débil contra los ataques de Shuriken, Saqueo y Aturdidores.
+			</p>
+			<h3>Híbrido</h3>
+			<p>Se trata de una combinación de las redes anteriores y es muy útil porque tienen más variedad a la hora de adaptarse y enfrentarse a las circunstancias al tener diferentes Niveles y Rangos. Sin embargo, el hecho de ser una combinación de muchas redes, los beneficios de tener un único modelo se reducen.</p>
+		</article>
+		<article>
+			<p>Aun así, no todo es 100% seguro, por lo que debemos andarnos con cuidado.</p>
+			<br>
+			<p>“El único sistema informático seguro es aquel que está apagado, en el interior de un bloque de hormigón y protegido dentro de una habitación sellada rodeada por guardias armados. E incluso así tengo mis dudas.” -Gene Spafford.</p>
+			<div class="foto">
+				<img src="img/seguridad2V.jpg">
+			</div>			
+		</article>
+		<article>
+			<h2>Bibliografía</h2>
+			<ul>
+				<li>https://www.viewnext.com/tipos-de-seguridad-informatica/</li>
+				<li>https://es.wikipedia.org/wiki/Cortafuegos_(inform%C3%A1tica)</li>
+				<li>http://bibliotecadigital.usb.edu.co/bitstream/10819/1607/1/Metodologia_Fuga_Informacion_Castrillon_2013.pdf</li>
+				<li>https://mundowin.com/5-mejores-programas-antispam-para-su-servidor-de-correo-electronico-exchange/</li>
+				<li>https://hackersthegame.fandom.com/wiki/Estrategias_de_Defensa</li>
+				<li>https://es.safetydetectives.com/blog/mejores-herramientas-anti-spyware-probadas/</li>
+				<li>https://frases-celebres.com/el-unico-sistema-informatico-seguro-es-aquel-esta-apagado-interior-bloque-hormigon-protegido-dentro-habitacion-sellada</li>
+				<li>https://seguridad.prestigia.es/que-es-un-filtro-antiphishing-y-como-puede-ayudarnos/</li>
+				<li>https://www.delfossistemas.com/hackers-tipos-metodos-que-utilizan-y-como-protegerse-de-ellos/</li>
+				<li>https://www.ibm.com/docs/es/power8?topic=support-ip-packet-filter-firewall</li>
+			</ul>
+		</article>
+	</section>
+</main>
+<footer>
+	<p>Trabajo realizado por: María, Kevin y Alfonso</p>
+</footer>
+</body>
+</html>

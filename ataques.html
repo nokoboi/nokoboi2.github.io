@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ataques</title>
+	<link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+        <img src="img/logo.png" alt="">
+        <nav>
+            <a href="index.html">Hackers</a>
+            <a href="ataques.html">Ataques a redes</a>
+            <a href="defensa.html">Defensa de redes</a>
+        </nav>
+    </header>
+
+    <main>
+    		<section id="ataques">
+    			
+				<article id="ecp">
+					
+    				<h2>Escaneo de Puertos</h2>
+
+    				<p>
+						El escaneo de puertos es lo primero que se realiza para intentar vulnerar a un objetivo. 
+						Es una de las técnicas de reconocimiento más utilizada por los cibercriminales para descubrir servicios expuestos con los puertos abiertos, 
+						se usa para saber si se está usando un firewall e incluso qué sistema operativo está usando la víctima
+    				</p>
+    				<p>
+						En los escaneos de puertos, enviaremos mensajes a cada puerto, uno por uno,
+						 dependiendo del tipo de respuesta recibida, el puerto estará abierto, filtrado o cerrado.
+    				</p>
+
+				</article>
+				
+				<article id="ddos">
+
+    				
+    				<h2>DDOS</h2>
+    				<p>
+						Un ataque de denegación de servicio, tiene como objetivo inhabilitar el uso de un sistema, una aplicación, 
+						un ordenador o un servidor, con el fin de bloquear el servicio para el que está destinado. Este ataque puede afectar,
+						 tanto a la fuente que ofrece la información, como puede ser una aplicación o un canal de transmisión. 
+					</p>
+					<p>
+						 El tipo más común es cuando un atacante inunda una red con una gran cantidad de datos.
+						 En un ataque DoS hacia una web, cuando escribimos una URL y accedemos, estaremos enviando una solicitud para que nos muestra la información, 
+						 en este caso, un atacante podría realizar una gran cantidad  de peticiones con el objetivo de colapsar todo el sistema. 
+						 Por eso, este ataque recibe el nombre de denegación de servicios  ya que no se puede acceder al sitio afectado.
+					</p>
+
+    				<h3>PARA QUE SE REALIZAN ESTOS ATAQUES</h3>
+
+    				<lu>
+    					<li>Causar un impacto economico o social</li>
+    					<li>Crear una cortina de humo mientras se realiza otro ataque</li>
+    					<li>Extorsionar o negociar a cambio de dinero</li>
+    				</lu>
+
+					<h3>Tipos de ataques DDOS</h3>
+
+						<div id="ICMP">
+							<h4>ICMP</h4>
+							<p>
+								Este tipo de ataque de denegación de servicio permite agotar el ancho de banda de la víctima. 
+								Consiste en enviar una gran cantidad de información usando paquetes ICMP o mas conocido como ping
+								pero modificado para que sea más grande de lo habitual. Además, la víctima podría responderle con paquetes ICMP o conocidos como respuesta al ping 
+								por lo que tendremos una sobrecarga adicional, tanto en la red como en la víctima 
+							</p>
+						</div>
+
+						<div id="Ping">
+							<h4>Ping of the head</h4>
+							<p>
+								Este ataque es similar al anterior, consiste en enviar un paquete de más de 65536 bytes, haciendo que el sistema operativo 
+								no sepa cómo manejar este paquete tan grande, haciendo que el sistema operativo se bloquee al intentar ensamblarlo nuevamente.
+								Hoy en día este ataque no funciona, porque el sistema operativo va a descartar los paquetes directamente
+							</p>
+						</div>
+    			</article>
+
+				<article id="medio">
+    				<h2>ATAQUE MAN-IN-THE-MIDDLE</h2>
+    				<p>
+    					Un ataque man-in-the-middle o ataque de intermedio es un tipo de ataque el cual es capaz de leer, insertar y modificar a voluntad.
+
+    					Este ataque consiste en que en una comuniccion de dos personas hay una terera persona que se encargar de escuchar la conversacion y esta persona tiene qe ser capaz de de observar e
+    					interceptar mensajes entre las dos victimas y procurar que no sea detectado.
+
+    				<p>
+    					Estos ataques durante un tiempo estavan muy controlodas pero con el aumento de puntos de acceso gratuito estos ataque estan volviendo a ser muy frecuentes. 
+    				</p>
+
+					<h3>Tipod de ataques MIMM</h3>
+
+					<div id="wf">
+						<h4>ATAQUE DESDE ROUTER</h4>
+						<p>
+							En este tipo de ataque el atancante configura su ordenador u otro dispositivo para que actúe como red WiFi, 
+							nombrándolo como si fuera una red pública. Después, el usuario se conecta al router y el ciberdelincuente  captura  las credenciales de la víctima para usarlas posteriormente
+						</p>
+					</div>
+
+					<div id="dentro">
+						<h4>ATAQUE DESDE EL EQUIPO</h4>
+						<p>
+							En este contexto, el ciberdelincuente usa una serie de métodos para insertar un código malicioso en el equipo de la víctima, 
+							el cual funciona dentro del navegador. Este malware registra, silenciosamente, los datos enviados entre el navegador y las páginas. 
+							Estos ataques han ganado en popularidad porque permiten al delincuente atacar a un grupo mayor de víctimas sin la necesidad de estar cerca de éstas.
+						</p>
+					</div>
+    			
+
+				</article>
+    			
+
+				<article id="tcp ip">	
+    				<h2>Ataque de secuencia tcp/ip</h2>
+    				<p>
+    					Las siglas TCP significan Transmission Control Protocol, que en español lo podemos traducir como Protocolo de control de transmisión. 
+						Se trata de un protocolo basado en conexión que requiere que se establezca una conexión formal entre un remitente y un receptor antes de que se pasen datos entre ellos. 
+    				</p>
+
+    				<p>
+    					un ataque de predicción de secuencia TCP consiste en predecir el número de secuencia que es utilizado para identificar los paquetes en una conexión TCP. De esta forma podrían falsificar los paquetes y 
+						poner así en riesgo la seguridad.
+						El objetivo del atacante en este caso es averiguar el número de secuencias que va a utilizar el host que va a enviar el paquete. 
+						Si ese atacante lograra averiguar ese número tendría  la posibilidad de enviar paquetes falsificados al host de destino que parecerán iguales y que han sido enviados por el host de destino.
+    				</p>
+				</article>
+    			
+
+				<article id="dns">
+					
+    				<h2>ATAQUE DNS</h2>
+
+    				<p>
+    					Los ataques DNS es un ataque en el que un ciberdelincuente puede encontrar debilidades para explotar en el DNS. 
+						Lo que hace este sistema es interpretar el nombre de un dominio alfanumérico en una dirección IP.  
+						facilita el poder acceder a una dirección por parte de un humano.
+    				</p>
+    				<p>
+						Con un ataque de DNS un ciberdelincuente podría redireccionarnos a páginas falsas. 
+						Crear una pagina igual  con la cual ser capaz de conseguir nuestras credenciales y contraseñas.
+						 Una caché DNS que ha sido modifica para que  nos redirigiría correctamente a las direcciones IP falsa.
+    				</p>
+
+					<h4>TIPOS DE ATAUQES DNS</h4>
+
+					<div id="dia0">
+						<h3>DIA 0</h3>
+						<p>
+							Este ataque de dns consiste en que un atacante aprovecha una vulnerabilidad descubierta recientemente y que aun no existe un parche
+							y aprovechan la oportunidad para infectar las distintas redes y los equipos para accerse con toda la informacion de la red y de los equipos.
+						</p>
+
+
+					</div>
+
+    			
+				</article>
+    		</section>
+    </main>
+	<footer>
+        <p>Trabajo realizado por: María, Kevin y Alfonso</p>
+    </footer>
+</body>
+</html>
